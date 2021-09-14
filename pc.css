@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap&effect=shadow-multiple|fire-animation');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+
+.back_div_1{
+
+    background:#f3f0be;
+    
+    width: 100vw;
+    height:100vh;
+    position: relative;
+    z-index:1;
+    overflow: hidden;
+
+}
+
+.btndiv a{
+    color: rgb(37, 7, 7);
+    font-weight: 550%;
+    
+    padding-right: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+ .btndiv {
+     font-family: 'Poppins', sans-serif; 
+     margin-left: 20px;
+     
+     font-size: 24px; 
+     box-sizing: border-box;
+     position: relative;
+     padding-top: 10px;
+} 
+
+
+.front_div_1{ background:#f7f7f0;
+width:94vw ;
+height:85vh ;
+position:relative;
+left:50%;
+top:45%;
+transform: translate(-50%,-50%);
+box-shadow: 0px 0px 30px rgb(82, 76, 76);
+overflow: hidden;
+z-index:2;
+}
+
+
+.front_div_1 img
+{
+    margin-top: 250px;
+    height: 300px;
+    filter:drop-shadow(-30px -10px 40px black) ;
+    -webkit-box-reflect: below -30px linear-gradient(transparent,rgba(255,255,255,0.8)) ;
+    
+}
+
+/*text animation start*/
+
+.textdiv1{
+    position: absolute;
+    left: 60%;
+    bottom: 50%;
+    text-align: center;
+
+
+}
+
+.textdiv1 span{
+    
+     
+    text-transform: uppercase;
+    display: block;
+    display: flex;
+    justify-content:center;
+    text-align:center;
+}
+.text1{font-size: 60px;
+    font-weight: 700;
+    letter-spacing:8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 4s 1;
+    background:#f7f7f0 ;
+    
+}
+.text2{
+    font-size: 30px;
+    color:#6ab04c;
+    font-weight: 550;
+      
+}
+
+@keyframes text{
+
+    0%{color:black;
+    margin-bottom: -40px;
+}
+30%{
+    letter-spacing: 19px;
+    margin-bottom: -40px; 
+}
+85%{
+    letter-spacing: 8px;
+    margin-bottom:-40px;
+}
+
+}
+
+.textshow1{
+
+    position: absolute;
+    left: 60%;
+    bottom:40%;
+    overflow: hidden;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height:1.5;
+    
+}
+
+/*text animation end*/
+
+/*reflex image start*/
+
+.row{width: 100px;
+
+background-color: rgba(108, 206, 9, 0.383);
+border: 1px solid #eee;
+position: absolute;
+margin-left: 35px;
+margin-top: 0;
+
+}
+.sd1{height: 150px;
+    position: relative;
+   
+}
+.sd1:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height:100%;
+    top:50px;
+    left:0;
+    background-color:rgba(134, 245, 23, 0.972) ;
+    transform: skewY(20deg);
+    z-index: 0;
+    
+}
+
+
+/*reflex image end*/
+
+/*leaves animation start*/
+
+.animation1{
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    z-index:3;
+    position:absolute ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    pointer-events: none;
+}
+.set div{
+    position: absolute;
+    display: block;
+}
+
+.set div:nth-child(1)
+{
+    left:20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+
+}
+.set div:nth-child(2)
+{
+    left:50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(3)
+{
+    left:70%;
+    animation: animate 20s linear infinite;
+    animation-delay: 0s;
+}
+.set div:nth-child(4)
+{
+    left:0%;
+    animation: animate 15s linear infinite;
+    animation-delay: -10s;
+}
+.set div:nth-child(5)
+{
+    left:85%;
+    animation: animate 18s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(6)
+{
+    left:0%;
+    animation: animate 12s linear infinite;
+    
+}
+.set div:nth-child(7)
+{
+    left:15%;
+    animation: animate 14s linear infinite;
+    
+}
+.set div:nth-child(8)
+{
+    left:60%;
+    animation: animate 15s linear infinite;
+    
+}
+
+@keyframes animate{
+
+0%{
+    opacity: 0;
+    top:-10%;
+    transform: translateX(20px) rotate(0deg);
+}
+10%{
+    opacity: 1;
+}
+20%{
+    transform: translateX(-20px)rotate(45deg);
+}
+40%{
+    transform: translateX(-20px)rotate(90deg);
+}
+60%{
+    transform: translateX(20px)rotate(180deg);
+}
+80%{
+    transform: translateX(-20px)rotate(180deg);
+}
+100%{
+    top: 110%;
+    transform: translateX(-20px)rotate(225deg);
+}
+
+}
+
+/*leaves animation end*/
+
+.clear{clear: both;}
+
+
+/*1st page decoration end*/
+
+/*2nd page decoration start*/
+
+
+    /*background glowing effect start*/
+body{
+   
+    justify-content: center;
+    align-items: center;
+    
+    
+    background: #010615; 
+ }
+ .back_div_2{height: 100vh;
+width: 100vw;
+overflow: hidden;
+position: relative;}
+
+
+ .box{ background:#060c21;
+     width:93vw ;
+     height:87vh ;
+     display: flex;
+     position:relative;
+     
+     justify-content: right;
+     margin: 40px;
+     
+     }
+ 
+     
+ 
+     
+         .box:before{
+             content: '';
+             position: absolute;
+             top: -2px;
+             left:-2px;
+             right: -2px;
+             bottom:-2px;
+             z-index: -1;
+             background: #fff;
+ 
+         }
+         .box:after{
+             content: '';
+             position: absolute;
+             top: -2px;
+             left:-2px;
+             right: -2px;
+             bottom:-2px;
+             z-index: -2;
+             background: #fff;
+             filter: blur(40px);
+ 
+         }
+ 
+  
+ .box:nth-child(1):before,
+ .box:nth-child(1):after
+ {
+   background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+ }
+ 
+         .box .glass{position: absolute;
+             top: 0;
+             left:0;
+             width: 50%;
+             height: 100%;
+             display: block;
+             background: rgba(255,255,255,.1);
+             
+             opacity:50%;
+             
+             
+             }
+         .content {
+             padding: 20px;
+             color:#fff ;
+             position: absolute;
+             float: right;
+             display:flex;
+             
+             
+         }
+
+         .glass:hover{
+             background:  #060c21;
+                
+         }
+         .text-box{
+             
+             font-family: 'MedievalSharp', cursive;
+             color: rgb(253, 253, 253);
+             
+             font-weight: 800%;
+             font-size: 25px; 
+           
+         }
+         .text-box{
+             
+             display:flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 100px;
+             letter-spacing: 2px;
+             line-height: 45px;
+             overflow: hidden;
+         }
+         
+         .text-box:hover{color: rgb(128, 226, 48);
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 10px;
+            background:#060c21 ;
+            transition: .2s; 
+            opacity: 100%;
+    
+            }
+
+            
+         /*background glowing effect end*/
